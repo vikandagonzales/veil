@@ -1,7 +1,27 @@
 {
   "name": "veil",
   "version": "0.1.0",
-  "private": true,
+  "description": "",
+  "main": "./public/index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikandagonzales/veil.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "sass",
+    "javascript",
+    "react",
+    "redux",
+    "axios"
+  ],
+  "author": "Vikanda Gonzales <vikanda.gonzales@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vikandagonzales/veil/issues"
+  },
+  "homepage": "http://www.veilguild.com",
   "dependencies": {
     "autoprefixer": "^9.4.5",
     "axios": "^0.18.0",
@@ -21,7 +41,11 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "css-deploy": "npm run css-build && npm run css-postcss",
+    "css-build": "node-sass src/stylesheets/sass/main.scss src/stylesheets/css/main.css",
+    "css-postcss": "postcss --use autoprefixer --output src/stylesheets/css/main.css src/stylesheets/css/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch | react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
