@@ -7,7 +7,7 @@ import {Provider} from 'react-redux';
 import store from './store';
 
 // CSS
-// import './stylesheets/css/main.css';
+import './stylesheets/css/main.css';
 
 // COMPONENTS
 import App from './App';

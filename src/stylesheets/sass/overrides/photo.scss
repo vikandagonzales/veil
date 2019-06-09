@@ -1,0 +1,18 @@
+img {
+  display: block;
+  object-fit: cover;
+}
+
+.profile {
+  align-items: center;
+  background-color: $periwinkle;
+  border-radius: 50%;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  
+  img {
+    border-radius: 50%;
+    height: 100%; 
+  }
+}

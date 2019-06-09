@@ -10,9 +10,8 @@ import {connect} from 'react-redux';
 // import {getUser} from './state/actions/auth';
 
 // COMPONENTS
-// import Header from './components/Header';
-// import Main from './components/Main';
-// import Invitation from './components/Invitation';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 // ==========
 
@@ -23,19 +22,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        hi
-      </div>
-
-      // <BrowserRouter>
-      //   <div>
-      //     <Header />
-      //     <Switch>
-      //       {this.props.authorized ? <Route path="/invitation" component={Invitation} /> : null}
-      //       <Route path="/" component={Main} />
-      //     </Switch>
-      //   </div>
-      // </BrowserRouter>
+      <BrowserRouter>
+        <div>
+          <Header />
+          <Switch>
+            {/* <Route path="/character-builder" component={CharacterBuilder} /> */}
+            {/* {this.props.authorized ? <Route path="/invitation" component={Invitation} /> : null}
+            <Route path="/" component={Main} /> */}
+          </Switch>
+          <Footer />
+        </div>
+      </BrowserRouter>
     );
   };
 };

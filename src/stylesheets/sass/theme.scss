@@ -1,0 +1,35 @@
+html {
+  overflow-y: auto;
+}
+
+body {
+  background-color: $dark;
+  min-height: 100vh;
+  padding-top: $navbar-height;
+}
+
+.columns.is-fullheight {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - #{$navbar-height});
+  justify-content: stretch;
+  max-height: calc(100vh - #{$navbar-height});
+  min-height: calc(100vh - #{$navbar-height});
+  
+  .column {
+    overflow-y: auto;
+  }
+}
+
+.hero.is-fullheight {
+  min-height: calc(100vh - #{$navbar-height});
+}
+
+.navbar-link:not(.is-arrowless)::after,
+.select:not(.is-multiple):not(.is-loading)::after {
+  height: .5rem;
+  width: .5rem;
+  right: 1rem;
+  border-width: 1px;
+  border-radius: 0;
+}

@@ -1,0 +1,73 @@
+html {
+  overflow-y: auto;
+}
+
+body {
+  // background: $turquoise url(../assets/adventure-bg.jpg) no-repeat center/cover; 
+  min-height: 100vh;
+}
+
+.button {
+  transition: 300ms all ease;
+}
+
+.button.is-primary.is-outlined {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  // border-image: url(../assets/adventure-link.jpg) 30;
+  border-radius: 0;
+  padding: 1rem 1.5rem;
+
+  &:hover {
+    color: $turquoise;
+    // background: $primary url(../assets/adventure-link.jpg) no-repeat center/cover;
+  }
+}
+
+.input {
+  background-color: transparent;
+  height: inherit;
+  border: 0;
+  border-bottom: 2px solid $teal;
+  border-radius: 0;
+  box-shadow: none;
+  transition: 300ms all ease;
+
+  &:hover {
+    border-color: $crust;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.field.is-horizontal {
+  display: flex;
+}
+
+.field-body {
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 5;
+  flex-shrink: 1;
+}
+
+.field-body > .field:not(:last-child) {
+  margin-right: 0.75rem;
+}
+
+.is-checkradio[type="radio"] + label::before, 
+.is-checkradio[type="radio"] + label:before, 
+.is-checkradio[type="checkbox"] + label::before, 
+.is-checkradio[type="checkbox"] + label:before {
+  transition: 300ms all ease;
+}
+
+@media (max-width: 768px) {
+  .level-left + .level-right {
+    margin-top: 0;
+  }
+}
