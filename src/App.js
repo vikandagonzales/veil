@@ -13,6 +13,9 @@ import {connect} from 'react-redux';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
+// CONTAINERS
+import Home from './containers/Home';
+
 // ==========
 
 class App extends React.Component {
@@ -26,9 +29,9 @@ class App extends React.Component {
         <div>
           <Header />
           <Switch>
-            {/* <Route path="/character-builder" component={CharacterBuilder} /> */}
-            {/* {this.props.authorized ? <Route path="/invitation" component={Invitation} /> : null}
-            <Route path="/" component={Main} /> */}
+            {/* <Route path="/blog" component={Blog} /> */}
+            {/* {this.props.authorized ? <Route path="/profile" component={Profile} /> : null} */}
+            <Route path="/" component={Home} />
           </Switch>
           <Footer />
         </div>
