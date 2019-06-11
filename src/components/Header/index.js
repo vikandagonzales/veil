@@ -41,7 +41,7 @@ class Header extends React.Component {
                 <NavLink className="navbar-item" activeClassName="is-active" to="/characters">Blog</NavLink>
                 <div className="navbar-item has-dropdown is-hoverable">
                   <span className="navbar-link is-hidden-touch">Calendar</span>
-                  <div className="navbar-dropdown">
+                  <div className="navbar-dropdown is-boxed">
                     <Link className="navbar-item" to="/character-builder">Personal</Link>
                     <Link className="navbar-item" to="/arena">FFXIV</Link>
                     <Link className="navbar-item" to="/dice-roller">D&D</Link>
@@ -49,16 +49,22 @@ class Header extends React.Component {
                 </div>
                 <div className="navbar-item has-dropdown is-hoverable">
                   <span className="navbar-link is-hidden-touch">Handbook</span>
-                  <div className="navbar-dropdown">
+                  <div className="navbar-dropdown is-boxed">
                     <Link className="navbar-item" to="/character-builder">History</Link>
                     <Link className="navbar-item" to="/arena">Rules</Link>
                     <Link className="navbar-item" to="/dice-roller">Ranks</Link>
                   </div>
                 </div>
-                <NavLink className="navbar-item" activeClassName="is-active" to="/campaigns">Roster</NavLink>
+                <div className="navbar-item has-dropdown is-hoverable">
+                  <span className="navbar-link is-hidden-touch">Roster</span>
+                  <div className="navbar-dropdown is-boxed">
+                    <Link className="navbar-item" to="/character-builder">Members</Link>
+                    <Link className="navbar-item" to="/arena">Groups</Link>
+                  </div>
+                </div>
                 <NavLink className="navbar-item" activeClassName="is-active" to="/compendium">Apply</NavLink>
                 <div className="navbar-item has-dropdown is-hoverable">
-                  <span className="navbar-link is-hidden-touch">
+                  <span className="navbar-link is-hidden-touch is-arrowless">
                     <figure className="image profile">
                       {/* {
                         user.photo ? (
@@ -70,9 +76,9 @@ class Header extends React.Component {
                       <img src="http://vikanda.net/veilguild.com/members/vikanda.png" alt="Vikanda" />
                     </figure>
                     {/* <span>{user.first_name}</span> */}
-                    Vikanda
+                    
                   </span>
-                  <div className="navbar-dropdown is-right">
+                  <div className="navbar-dropdown is-boxed is-right">
                     <Link className="navbar-item" to="/profile">Profile</Link>
                     <Link className="navbar-item" to="/settings">Settings</Link>
                     <Link className="navbar-item" to="/help">Help</Link>

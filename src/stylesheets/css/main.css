@@ -4891,7 +4891,7 @@ a.navbar-item,
       display: block;
       opacity: 0;
       pointer-events: none;
-      top: calc(100% + (-4px));
+      top: calc(100% + (0));
       transform: translateY(-5px);
       transition-duration: 86ms;
       transition-property: opacity, transform; }
@@ -7797,9 +7797,6 @@ img {
     padding: .5rem 1rem; }
   .navbar .navbar-item .navbar-link:not(.is-arrowless) {
     padding: .5rem 2rem .5rem 1rem; }
-  .navbar .lnr {
-    margin-right: .5rem; }
   .navbar .profile {
     height: 2rem;
-    margin-right: .6rem;
     width: 2rem; }
