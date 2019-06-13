@@ -32,21 +32,11 @@ class Header extends React.Component {
           </span>
         </div>
         <div className="navbar-menu" id="navMenu">
-          <div className="navbar-start">
-            
-          </div>
           {
             !this.props.authorized ? (
               <div className="navbar-end">
                 <NavLink className="navbar-item" activeClassName="is-active" to="/characters">Blog</NavLink>
-                <div className="navbar-item has-dropdown is-hoverable">
-                  <span className="navbar-link is-hidden-touch">Calendar</span>
-                  <div className="navbar-dropdown is-boxed">
-                    <Link className="navbar-item" to="/character-builder">Personal</Link>
-                    <Link className="navbar-item" to="/arena">FFXIV</Link>
-                    <Link className="navbar-item" to="/dice-roller">D&D</Link>
-                  </div>
-                </div>
+                <NavLink className="navbar-item" activeClassName="is-active" to="/characters">Calendar</NavLink>
                 <div className="navbar-item has-dropdown is-hoverable">
                   <span className="navbar-link is-hidden-touch">Handbook</span>
                   <div className="navbar-dropdown is-boxed">
@@ -64,7 +54,7 @@ class Header extends React.Component {
                 </div>
                 <NavLink className="navbar-item" activeClassName="is-active" to="/compendium">Apply</NavLink>
                 <div className="navbar-item has-dropdown is-hoverable">
-                  <span className="navbar-link is-hidden-touch is-arrowless">
+                  <span className="navbar-link is-hidden-touch is-arrowless profile-link">
                     <figure className="image profile">
                       {/* {
                         user.photo ? (
@@ -75,8 +65,6 @@ class Header extends React.Component {
                       } */}
                       <img src="http://vikanda.net/veilguild.com/members/vikanda.png" alt="Vikanda" />
                     </figure>
-                    {/* <span>{user.first_name}</span> */}
-                    
                   </span>
                   <div className="navbar-dropdown is-boxed is-right">
                     <Link className="navbar-item" to="/profile">Profile</Link>

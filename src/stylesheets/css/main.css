@@ -7792,11 +7792,13 @@ img {
 .navbar {
   font-size: 1.1rem;
   text-transform: uppercase;
-  padding: 0 0; }
+  padding: 0 1rem 0 0; }
   .navbar .navbar-item:not(.has-dropdown) {
     padding: .5rem 1rem; }
   .navbar .navbar-item .navbar-link:not(.is-arrowless) {
     padding: .5rem 2rem .5rem 1rem; }
+  .navbar .profile-link {
+    padding: .5rem 1.75rem; }
   .navbar .profile {
     height: 2rem;
     width: 2rem; }

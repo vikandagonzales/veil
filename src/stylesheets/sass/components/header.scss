@@ -1,7 +1,7 @@
 .navbar {
   font-size: 1.1rem;
   text-transform: uppercase;
-  padding: 0 $navbar-padding-horizontal;
+  padding: 0 $navbar-padding-horizontal+1rem 0 $navbar-padding-horizontal;
 
   .navbar-item:not(.has-dropdown) {
     padding: .5rem 1rem;
@@ -9,6 +9,10 @@
 
   .navbar-item .navbar-link:not(.is-arrowless) {
     padding: .5rem 2rem .5rem 1rem;
+  }
+
+  .profile-link {
+    padding: .5rem 1.75rem;
   }
 
   .profile {
